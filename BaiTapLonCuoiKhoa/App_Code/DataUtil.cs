@@ -99,6 +99,80 @@ public class DataUtil
         cmd.ExecuteNonQuery();
         con.Close();
     }
+    public List<OrderTable> dsOrderTable()
+    {
+        List<OrderTable> listOrderTable = new List<OrderTable>();
+        string sqlslOrderTable = "select * from OrderTable";
+        con.Open();
+        SqlCommand cmd = new SqlCommand(sqlslOrderTable, con);
+        SqlDataReader dr = cmd.ExecuteReader();
+        while (dr.Read())
+        {
+            OrderTable tb = new OrderTable();
+            tb.ordertable_id = (int)dr["ordertable_id"];
+            tb.ordertable_iduser = (int)dr["ordertable_iduser"];
+            tb.ordertable_timeset = (DateTime)dr["ordertable_timeset"];
+            tb.ordertable_idtable = (int)dr["ordertable_idtable"];
+            tb.ordertable_status = (bool)dr["ordertable_status"];
+
+
+
+
+            listOrderTable.Add(tb);
+
+        }
+        con.Close();
+        return listOrderTable;
+    }
+
+
+
+    public void xoaotb(int maotb)
+    {
+        string sqlxoatb = "delete from OrderTable where ordertable_id=@maotb";
+        con.Open();
+        SqlCommand cmd = new SqlCommand(sqlxoatb, con);
+        cmd.Parameters.AddWithValue("maotb", maotb);
+        cmd.ExecuteNonQuery();
+        con.Close();
+    }
+    public OrderTable lay1otb(int maotb)
+    {
+
+        string sqlsl = "select * from OrderTable where ordertable_id=@maotb";
+        con.Open();
+        SqlCommand cmd = new SqlCommand(sqlsl, con);
+        cmd.Parameters.AddWithValue("maotb", maotb);
+        SqlDataReader dr = cmd.ExecuteReader();
+        OrderTable otb = null;
+        while (dr.Read())
+        {
+            otb = new OrderTable();
+            otb.ordertable_id = (int)dr["ordertable_id"];
+            otb.ordertable_iduser = (int)dr["ordertable_iduser"];
+            otb.ordertable_timeset = (DateTime)dr["ordertable_timeset"];
+            otb.ordertable_idtable = (int)dr["ordertable_idtable"];
+            otb.ordertable_status = (bool)dr["ordertable_status"];
+
+
+        }
+        con.Close();
+        return otb;
+    }
+    public void suaotb(OrderTable otb)
+    {
+        string sqlsuotb = "update  OrderTable set ordertable_iduser=@ordertable_iduser,ordertable_timeset=@ordertable_timeset,ordertable_idtable=@ordertable_idtable,ordertable_status=@ordertable_status where ordertable_id=@ordertable_id";
+        con.Open();
+        SqlCommand cmd = new SqlCommand(sqlsuotb, con);
+        cmd.Parameters.AddWithValue("ordertable_iduser", otb.ordertable_iduser);
+        cmd.Parameters.AddWithValue("ordertable_timeset", otb.ordertable_timeset);
+        cmd.Parameters.AddWithValue("ordertable_idtable", otb.ordertable_idtable);
+        cmd.Parameters.AddWithValue("ordertable_status", otb.ordertable_status);
+        cmd.Parameters.AddWithValue("ordertable_id", otb.ordertable_id);
+
+        cmd.ExecuteNonQuery();
+        con.Close();
+    }
 
 
 
