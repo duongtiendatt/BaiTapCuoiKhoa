@@ -96,7 +96,7 @@
                                         <span>Order Tables</span></a>
                                     <ul class="collapse">
                                         <li><a href="/Admin/QLOrderTable/ListOrderTable.aspx">List OrderTable</a></li>
-                                        <li><a href="/Admin/QLOrderTable/AddTOrderable.aspx">Add OrderTable</a></li>
+                                        <%--<li><a href="/Admin/QLOrderTable/AddTOrderable.aspx">Add OrderTable</a></li>--%>
                                         
                                     </ul>
                                 </li>

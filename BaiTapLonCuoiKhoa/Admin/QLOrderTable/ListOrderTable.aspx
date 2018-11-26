@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="LinkPageAdmin" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentRight" Runat="Server">
-         <div class="col-12 mt-5">
+     <div class="col-12 mt-5">
         <div class="card">
             <div class="card-body">
                 <h4 class="header-title">Data Table Dark</h4>
