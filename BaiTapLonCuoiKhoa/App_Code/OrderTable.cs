@@ -15,8 +15,10 @@ public class OrderTable
         //
     }
     public int ordertable_id { get; set; }
-    public DateTime ordertable_timeset { get; set; }
-    public int ordertable_quantity { get; set; }
-    public int ordertable_status { get; set; }
     public int ordertable_iduser { get; set; }
+    public DateTime ordertable_timeset { get; set; }
+    public int ordertable_idtable { get; set; }
+    public bool ordertable_status { get; set; }
+
+
 }

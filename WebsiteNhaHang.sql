@@ -4,6 +4,7 @@ go
 use WebsiteNhaHang
 go
 
+select * from Member
 create table Food
 (
 	food_id int primary key identity(1,1),
