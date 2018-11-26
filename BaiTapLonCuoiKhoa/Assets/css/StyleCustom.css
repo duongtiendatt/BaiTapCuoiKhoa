@@ -1,0 +1,295 @@
+﻿body {
+}
+
+/*
+    created by Dat 24-11
+*/
+.login-area {
+    background-image: url(/Assets/images/bg_3.jpg);
+}
+
+.login-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+}
+
+    .login-box form {
+        margin: auto;
+        width: 450px;
+        max-width: 100%;
+        background: #fff;
+        border-radius: 3px;
+    }
+
+.login-form-head {
+    text-align: center;
+    background: #8655FC;
+    padding: 50px;
+}
+
+    .login-form-head h4 {
+        letter-spacing: 0;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 7px;
+        color: #fff;
+    }
+
+    .login-form-head p {
+        color: #fff;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+.login-form-body {
+    padding: 50px;
+}
+
+.form-gp {
+    margin-bottom: 25px;
+}
+
+    .form-gp label {
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #b3b2b2;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+
+    .form-gp.focused label {
+        top: -15px;
+        color: #7e74ff;
+    }
+
+    .form-gp input {
+        border-bottom: 1px solid #e6e6e6;
+    border-left-style: none;
+    border-left-color: inherit;
+    border-left-width: medium;
+    border-right-style: none;
+    border-right-color: inherit;
+    border-right-width: medium;
+    border-top-style: none;
+    border-top-color: inherit;
+    border-top-width: medium;
+}
+
+        .form-gp input::-webkit-input-placeholder {
+            color: #dad7d7;
+        }
+
+        .form-gp input::-moz-placeholder {
+            color: #dad7d7;
+        }
+
+        .form-gp input:-ms-input-placeholder {
+            color: #dad7d7;
+        }
+
+        .form-gp input:-moz-placeholder {
+            color: #dad7d7;
+        }
+
+    .form-gp i {
+        position: absolute;
+        right: 5px;
+        bottom: 15px;
+        color: #7e74ff;
+        font-size: 16px;
+    }
+
+.rmber-area {
+    font-size: 13px;
+}
+
+.submit-btn-area {
+    text-align: center;
+}
+
+    .submit-btn-area button {
+        width: 100%;
+        height: 50px;
+        border: none;
+        background: #fff;
+        color: #585b5f;
+        border-radius: 40px;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        font-weight: 600;
+        font-size: 12px;
+        box-shadow: 0 0 22px rgba(0, 0, 0, 0.07);
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+
+        .submit-btn-area button:hover {
+            background: #2c71da;
+            color: #ffffff;
+        }
+
+        .submit-btn-area button i {
+            margin-left: 15px;
+            -webkit-transition: margin-left 0.3s ease 0s;
+            transition: margin-left 0.3s ease 0s;
+        }
+
+        .submit-btn-area button:hover i {
+            margin-left: 20px;
+        }
+
+.login-other a {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    height: 43px;
+    line-height: 43px;
+    border-radius: 40px;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-size: 12px;
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.07);
+}
+
+    .login-other a i {
+        margin-left: 5px;
+    }
+
+    .login-other a.fb-login {
+        background: #8655FC;
+        color: #fff;
+    }
+
+        .login-other a.fb-login:hover {
+            box-shadow: 0 5px 15px rgba(44, 113, 218, 0.38);
+        }
+
+    .login-other a.google-login {
+        background: #fb5757;
+        color: #fff;
+    }
+
+        .login-other a.google-login:hover {
+            box-shadow: 0 5px 15px rgba(251, 87, 87, 0.38);
+        }
+
+.form-footer a {
+    margin-left: 5px;
+}
+
+.ptb--100 {
+    padding: 100px 0;
+}
+
+#form_submit:hover {
+    cursor: pointer;
+}
+
+.login-page {
+    background: #343a40 !important;
+    position: fixed;
+    width: 100%;
+}
+
+/*
+    created by Dat: 25-11
+*/
+
+.user-profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    -ms-flex-wrap: wrap;
+    padding: 8px 10px;
+    position: relative;
+}
+
+    .user-profile img.avatar {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        margin-right: 12px;
+        margin-top: 10px;
+    }
+
+.user-name {
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 35px;
+}
+
+    .user-name i {
+        margin-left: 10px;
+        font-size: 21px;
+        vertical-align: middle;
+        position: relative;
+    }
+
+    .notification-area .dropdown-toggle,
+    .user-name.dropdown-toggle {
+        position: relative;
+    }
+
+        .notification-area .dropdown-toggle:after,
+        .user-name.dropdown-toggle:after {
+            display: none;
+        }
+
+.notification-area .dropdown-menu,
+.user-profile .dropdown-menu {
+    background: #fff;
+    border: none;
+    -webkit-transform: none !important;
+    transform: none !important;
+    top: 130% !important;
+    right: 30px !important;
+    left: auto !important;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    display: block !important;
+    visibility: hidden;
+    opacity: 0;
+}
+
+    .notification-area .dropdown-menu.show,
+    .user-profile .dropdown-menu.show {
+        top: 100% !important;
+    }
+
+    .notification-area .dropdown-menu.show,
+    .user-profile .dropdown-menu.show {
+        top: 100% !important;
+        visibility: visible;
+        opacity: 1;
+        box-shadow: 0 0 45px 0 rgba(131, 23, 254, 0.06);
+    }
+
+    .user-profile .dropdown-menu a {
+        font-size: 14px;
+        color: #8a8a8a;
+        letter-spacing: 0;
+        font-weight: 500;
+        padding: 4px 120px;
+        padding-left: 25px;
+    }
+
+        .user-profile .dropdown-menu a:hover {
+            background: #f8f9fa;
+            color: #2942fa;
+        }
+
+
+.user-profile .dropdown-menu {
+    right: 0;
+}
