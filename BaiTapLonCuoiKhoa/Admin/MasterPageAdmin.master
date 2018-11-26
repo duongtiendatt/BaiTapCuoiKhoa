@@ -91,6 +91,16 @@
                                         <li><a href="/Admin/QLTable/UpdateTable.aspx">Update Table</a></li>
                                     </ul>
                                 </li>
+
+                                <li>
+                                    <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-birthday-cake"></i>
+                                        <span>Quản lý hóa đơn</span></a>
+                                    <ul class="collapse">
+                                        <li><a href="/Admin/QLHoaDon/OrderPage.aspx">Danh sách hóa đơn</a></li>
+                                        <li><a href="/Admin/QLHoaDon/OrderDetailPage.aspx">Danh sách chi tiết hóa đơn</a></li>
+                                    </ul>
+                                </li>
+
                                 <li>
                                     <a href="javascript:void(0)" aria-expanded="true"><i class="ti-layers-alt"></i><span>Pages</span></a>
                                     <ul class="collapse">
