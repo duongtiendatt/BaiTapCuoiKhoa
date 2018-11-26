@@ -44,7 +44,7 @@
                         Response.Write("<td>Chưa thanh toán</td>");
                     } 
                     Response.Write("<td><a title='Xem hóa đơn' class='btn btn-primary' style='display:block;padding:5px 10px;' href='javascript:void(0)' onclick='ModalDetailTable(" + item.ordertable_id + ")'>Xem hóa đơn</a></td>");
-                    Response.Write("</tr");
+                    Response.Write("</tr>");
                 }
             %>
         </tbody>

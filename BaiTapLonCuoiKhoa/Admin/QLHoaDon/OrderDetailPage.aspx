@@ -34,7 +34,7 @@
                     Response.Write("<td>" + item.food_sale + "</td>");
                     Response.Write("<td>" + item.quantity + "</td>");
                     Response.Write("<td>" + item.thanhtien + "</td>");
-                    Response.Write("</tr");
+                    Response.Write("</tr>");
                 }
             %>
         </tbody>
