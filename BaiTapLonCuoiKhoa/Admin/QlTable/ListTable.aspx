@@ -62,9 +62,11 @@
                                                 {
                                                     Response.Write("<td>Chưa được đặt</td>");
                                                 }
+
                                                 Response.Write("<td>"+tb.table_description+"</td>");
-                                                Response.Write("<td><a href='/Admin/QLTable/DeleteTable.aspx?idtable="+tb.table_id+"'>Xóa</a> | <a href='/Admin/QLTable/UpdateTable.aspx?idtable="+tb.table_id+"'>Sửa</a></td>");
+                                                Response.Write("<td><a href='javascript:void(0)' onclick='funcXoa("+tb.table_id+")'>Xóa</a> | <a href='/Admin/QLTable/UpdateTable.aspx?idtable="+tb.table_id+"'>Sửa</a></td>");
                                                 Response.Write("</tr>");
+                                               
 
                                                
                                             }
@@ -173,5 +175,25 @@
             </div>
         </div>
     </div>
+    <script>
+        function funcXoa(id) {
+            var kq = confirm("Bạn có muỗn xóa không")
+            if (kq) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Admin/QlTable/ListTable.aspx/XoaTable",
+                    data: "{idtable:" + id + "}",
+                    contentType: "application/json; charset=utf-8",
+                    //dataType: "json",
+                    success: function (msg) {
+                        alert(msg.d);
+                        location.reload();
+                    }
+                });
+
+            }
+        }
+
+    </script>
 </asp:Content>
 

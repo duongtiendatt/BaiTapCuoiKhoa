@@ -40,7 +40,7 @@
                                             <th class="sorting" tabindex="0" aria-controls="dataTable3" rowspan="1" colspan="1" style="width: 94px;" >ID User</th>
                                             <th class="sorting" tabindex="0" aria-controls="dataTable3" rowspan="1" colspan="1" style="width: 226px;" >Ngày</th>
                                             <th class="sorting" tabindex="0" aria-controls="dataTable3" rowspan="1" colspan="1" style="width: 94px;" >ID Bàn</th>
-                                            <th class="sorting" tabindex="0" aria-controls="dataTable3" rowspan="1" colspan="1" style="width: 94px;" >Đã tanh toán hay chưa</th>
+                                            <th class="sorting" tabindex="0" aria-controls="dataTable3" rowspan="1" colspan="1" style="width: 94px;" >Tình trạng</th>
                                             
                                             
                                             <th class="sorting" tabindex="0" aria-controls="dataTable3" rowspan="1" colspan="1" style="width: 54px;" >Xóa</th>
@@ -206,7 +206,7 @@
                     url: "/Admin/QlOrderTable/ListOrderTable.aspx/XoaTable",
                     data: "{idtable:"+id+"}",
                     contentType: "application/json; charset=utf-8",
-                    dataType: "json",
+                    //dataType: "json",
                     success: function (msg) {
                         alert(msg.d);
                         location.reload(); 

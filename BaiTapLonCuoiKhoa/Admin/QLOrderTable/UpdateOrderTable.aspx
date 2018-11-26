@@ -15,6 +15,7 @@
                         <label for="example-text-input" class="col-form-label">ID OrderTable <label style="color: red">(*)</label></label>
                         <asp:TextBox runat="server" ID="txtidotb"  CssClass="form-control" />
                         <asp:RequiredFieldValidator ID="reidotb" runat="server" ErrorMessage="The field is required" ControlToValidate="txtidotb" Display="Dynamic" ForeColor="Red" />
+                        
 
                     </div>
                     <div class="form-group">
